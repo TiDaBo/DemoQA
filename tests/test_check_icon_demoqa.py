@@ -10,3 +10,5 @@ def test_check_icon(browser):
         print('Элемент не найден')
     else:
         print('Элемент найден')
+
+
