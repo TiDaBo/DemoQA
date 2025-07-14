@@ -18,3 +18,9 @@ class WebElement:
         except NoSuchElementException:
             return False
         return True
+
+    # 1. в классе компонентов создайте метод для получения текста с элементов get_text(self).
+    #  текст из элемента считывайте так str(self.find_element().text)
+
+    def get_text(self):
+        return str(self.find_element().text)
