@@ -27,5 +27,3 @@ class WebElement:
 
     def visible(self):
         return self.find_element().is_displayed()
-
-    def
