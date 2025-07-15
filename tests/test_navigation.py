@@ -1,14 +1,17 @@
 from pages.demoqa import DemoQA
 from pages.elements_page import ElementsPage
-from components.components import WebElement
+# import time
 
-
-def test_go_to_page_elements(browser):
-
+def test_navigation(browser):
     demo_qa_page = DemoQA(browser)
     el_page = ElementsPage(browser)
 
     demo_qa_page.visit()
-    assert demo_qa_page.equal_url()
     demo_qa_page.btn_elements.click()
+
+    demo_qa_page.refresh()
+    browser.refresh()
+    browser.back()
+    browser.forward()
+
     assert el_page.equal_url()

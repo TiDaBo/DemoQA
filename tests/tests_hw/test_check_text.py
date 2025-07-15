@@ -15,12 +15,22 @@ def test_check_text(browser):
 # c. проверить что текст по центру == 'Please select an item from left to start practice.'
 
 from pages.elements_page import ElementsPage
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 
 def test_check_text_elements(browser):
     demo_qa_page = DemoQA(browser)
     el_page = ElementsPage(browser)
 
     demo_qa_page.visit()
+
+    # Закрытие баннера, если он появился
+    try:
+        close_banner = browser.find_element(By.ID, "close-fixedban")
+        close_banner.click()
+    except NoSuchElementException:
+        pass  # баннера нет — идем дальше
+
     demo_qa_page.btn_elements.click()
     assert el_page.center_area.get_text() == 'Please select an item from left to start practice.'
 
