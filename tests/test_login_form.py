@@ -14,12 +14,22 @@ def test_login_form(browser):
     form_page.user_number.send_keys('9992223344')
     form_page.hobbies_checkbox_1.click_force()
     form_page.current_address.send_keys('Мой адрес не дом и не улица')
-    form_page.states_form.click_force()
-    time.sleep(2)
-    form_page.states_list.click_force()
     time.sleep(2)
     form_page.btn_submit.click_force()
     time.sleep(2)
 
     assert form_page.modal_dialog.exist()
     form_page.btn_close_modal.click_force()
+
+
+# a. создайте новый тест кейс
+# b. реализуйте заполнение поля State and City
+
+def test_state_city_form(browser):
+    form_page = FormPage(browser)
+
+    form_page.visit()
+    form_page.states_form.click_force()
+    time.sleep(2)
+    form_page.states_list.click_force()
+    time.sleep(2)

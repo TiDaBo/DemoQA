@@ -19,3 +19,4 @@ class FormPage(BasePage):
         self.current_address = WebElement(driver, '#currentAddress')
         self.states_form = WebElement(driver, '#state > div')
         self.states_list = WebElement(driver, '#state')
+        self.form = WebElement(driver, 'form')

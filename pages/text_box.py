@@ -8,3 +8,7 @@ class TextBox(BasePage):
         super().__init__(driver, self.base_url)
 
         self.name = WebElement(driver, '#userName')
+        self.current_address = WebElement(driver, '#currentAddress')
+        self.submit_btn = WebElement(driver, '#submit')
+        self.down_field_name = WebElement(driver, '#name.mb-1')
+        self.down_field_current_address = WebElement(driver, '#currentAddress.mb-1')
