@@ -38,5 +38,3 @@ class BasePage:
         except Exception as ex:
             logging.log(1, ex)
             return False
-
-
