@@ -33,3 +33,44 @@ def test_state_city_form(browser):
     time.sleep(2)
     form_page.states_list.click_force()
     time.sleep(2)
+    form_page.cities_form.click_force()
+    time.sleep(2)
+    form_page.cities_list.click_force()
+    time.sleep(2)
+
+# def test_state_city_1(browser):
+#     form_page = FormPage(browser)
+#
+#     form_page.visit()
+#     time.sleep(2)
+#     form_page.states_form.scroll_to_element()
+#     time.sleep(2)
+#     form_page.states_form.click()
+#     form_page.btn_NCR.click()
+#     form_page.cities_form.click()
+#     form_page.btn_Delhi.click()
+#     time.sleep(2)
+#
+# def test_state_city_2(browser):
+#     form_page = FormPage(browser)
+#
+#     form_page.visit()
+#     time.sleep(2)
+#     form_page.states_form.scroll_to_element()
+#     form_page.states_form.click()
+#     time.sleep(2)
+#     form_page.states_list.send_keys('NCR')
+#     form_page.states_list.send_keys(Keys.ENTER)
+#     time.sleep(2)
+#
+# def test_state_city_3(browser):
+#     form_page = FormPage(browser)
+#
+#     form_page.visit()
+#     time.sleep(2)
+#     form_page.states_form.scroll_to_element()
+#     form_page.states_form.click()
+#     time.sleep(2)
+#     form_page.states_list.send_keys(Keys.PAGE_DOWN)
+#     form_page.states_list.send_keys(Keys.ENTER)
+#     time.sleep(2)

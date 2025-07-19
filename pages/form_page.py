@@ -19,4 +19,8 @@ class FormPage(BasePage):
         self.current_address = WebElement(driver, '#currentAddress')
         self.states_form = WebElement(driver, '#state > div')
         self.states_list = WebElement(driver, '#state')
+        self.btn_NCR = WebElement(driver, "//*[contains(text(), 'NCR')]", 'xpath')
+        self.cities_form = WebElement(driver, '#city > div')
+        self.cities_list = WebElement(driver, '#city')
+        self.btn_Delhi = WebElement(driver, "//*[contains(text(), 'Delhi')]", 'xpath')
         self.form = WebElement(driver, 'form')
