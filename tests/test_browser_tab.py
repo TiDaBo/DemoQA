@@ -12,3 +12,4 @@ def test_browser_tab(browser):
 
     browser.switch_to.window(browser.window_handles[0])
     time.sleep(2)
+
