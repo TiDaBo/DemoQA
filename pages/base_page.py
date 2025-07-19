@@ -36,3 +36,4 @@ class BasePage:
             logging.log(1, ex)
             return False
 
+
