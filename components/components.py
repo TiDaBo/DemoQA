@@ -52,7 +52,6 @@ class WebElement:
 
     def get_dom_attribute(self, name: str):
         value = self.find_element().get_dom_attribute(name)
-
         if value is None:
             return False
         if len(value) > 0:
