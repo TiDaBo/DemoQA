@@ -1,5 +1,6 @@
 # 1. в файле test_check_modal.py автоматизируйте тест кейс
 # a. страница https://demoqa.com/modal-dialogs
+
 import time
 from pages.modal_dialogs import ModalDialogs
 
@@ -32,6 +33,8 @@ def test_check_modal(browser):
 
 # iv. *** Доработайте тестовый файл так, чтоб тест пропускался если страница недоступна.
 
-
+''' @pytest.mark.skipif(False, reason='Page not available') '''
 
 # Подумайте, как можно проверять страницу на доступность.
+
+''' По статусу ответа, например (!=200), но я не знаю, как составить запрос '''

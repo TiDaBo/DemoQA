@@ -1,8 +1,6 @@
 # 3. в файле test_sort.py автоматизируйте тест кейс:
 # a. Страница https://demoqa.com/webtables
 
-
-import time
 from pages.webtables import WebTables
 
 def test_sort(browser):
