@@ -30,3 +30,9 @@ class WebTables(BasePage):
         self.btn_edit_row_4 = WebElement(driver, '#edit-record-4#edit-record-4')
         self.btn_del_row_4 = WebElement(driver, '#delete-record-4#delete-record-4')
 
+        self.col_first_name = WebElement(driver, "#app .rt-thead > [role='row'] > div:nth-of-type(1)")
+        self.col_last_name = WebElement(driver, "#app .rt-thead > [role='row'] > div:nth-of-type(2)")
+        self.col_email = WebElement(driver, "#app .rt-thead > [role='row'] > div:nth-of-type(3)")
+        self.col_age = WebElement(driver, "#app .rt-thead > [role='row'] > div:nth-of-type(4)")
+        self.col_salary = WebElement(driver, "#app .rt-thead > [role='row'] > div:nth-of-type(5)")
+        self.col_dptmnt = WebElement(driver, "#app .rt-thead > [role='row'] > div:nth-of-type(6)")
